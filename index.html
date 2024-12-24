@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Self-Checkout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="oclc_circulation.png" alt="WorldShare Circulation Logo">
+    </div>
+    <div class="container">
+        <h1 class="mb-4">Library Self-Checkout (Demo)</h1>
+        <p>Patron barcode: 12345</p>
+        <p>Item barcodes: 123 and 456</p>
+        <!-- Patron information section -->
+        <div class="card">
+            <h2 class="section-title">Patron Information</h2>
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <label for="patronBarcode">Patron Barcode:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="patronBarcode" placeholder="Enter patron barcode">
+                </div>
+                <div class="col-md-3">
+                    <button id="findPatron" class="btn btn-primary">Find Patron</button>
+                </div>
+            </div>
+            <p id="patronStatus" class="mt-2"></p>
+        </div>
+
+        <!-- Items section -->
+        <div class="card">
+            <h2 class="section-title">Items</h2>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-3">
+                    <label for="itemBarcode">Item Barcode:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="itemBarcode" placeholder="Scan or enter item barcode">
+                </div>
+                <div class="col-md-3">
+                    <div id="addItemWrapper">
+                        <button id="addItem" class="btn btn-secondary" disabled>Add Item</button>
+                    </div>
+                </div>
+            </div>
+            <p id="itemStatus" class="mt-2"></p>
+            <div class="table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Item Barcode</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Call Number</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemTable"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <div id="checkoutWrapper">
+                <button id="checkout" class="btn btn-success" disabled>Check Out</button>
+            </div>
+            <p id="checkoutStatus" class="mb-0 ms-2"></p>
+            <button id="clearItems" class="btn btn-danger ms-auto">Clear All</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

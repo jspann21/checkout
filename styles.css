@@ -1,0 +1,197 @@
+/* Add a shadow to the logo section */
+.header {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+.header img {
+	max-height: 50px;
+}
+
+/* Styling for cards */
+.card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+/* Styling for field labels */
+label {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+/* Styling for input fields */
+input {
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+}
+
+/* Styling for buttons */
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn-primary {
+	background-color: #0078D4;
+	color: white;
+}
+.btn-primary:hover {
+	background-color: #005A9E;
+}
+
+.btn-secondary {
+	background-color: #6c757d;
+	color: white;
+}
+.btn-secondary:hover {
+	background-color: #5a6268;
+}
+
+.btn-danger {
+	background-color: #dc3545;
+	color: white;
+}
+.btn-danger:hover {
+	background-color: #c82333;
+}
+
+.btn-success {
+	background-color: #28a745;
+	color: white;
+}
+.btn-success:hover {
+	background-color: #218838;
+}
+
+/* Scrollable table styling */
+.table-container {
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 15px;
+	background-color: #f9f9f9;
+}
+.table {
+	margin-bottom: 0; /* Prevent unnecessary gap */
+}
+
+/* Table header styling */
+th {
+	background-color: #f1f1f1;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Section titles */
+.section-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%; /* Ensure responsiveness */
+    width: 600px; /* Default width */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Table in Popup */
+.popup-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: fixed; /* Ensures columns are fixed-width */
+}
+
+.popup-content th,
+.popup-content td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis; /* Show ellipsis for long text */
+}
+
+.popup-content th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.popup-content td {
+    font-size: 14px;
+}
+
+.text-info {
+    color: #17a2b8;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+#checkoutWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+#checkoutStatus {
+    margin: 0 15px; /* Prevent the status text from overlapping with buttons */
+    flex-grow: 1; /* Push other elements to keep the layout consistent */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 0 10px;
+}
+
+.ms-auto {
+    margin-left: auto; /* Ensures the Clear All button is aligned to the right */
+}
+
+.ms-2 {
+    margin-left: 10px; /* Adds a small gap between the status text and the checkout button */
+}
